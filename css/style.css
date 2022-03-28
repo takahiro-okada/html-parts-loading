@@ -1,0 +1,78 @@
+/* ローディング用 */
+.loading {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #efeeea;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  opacity: 1;
+  visibility: visible;
+}
+
+.loading.is-active {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation {
+  width: 100vw;
+  height: 100vh;
+  transition: all 1s;
+  background-color: #efeeea;
+  z-index: 9999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loading-animation.is-active {
+  opacity: 1;
+  visibility: visible;
+}
+/* サイトデザイン用 */
+body{
+  background: #efeeea;
+  padding: 0;
+  margin: 0;
+}
+.u-inner{
+  max-width: 100%;
+  width: 1280px;
+  margin: 0 auto;
+}
+.l-header{
+  height: 80px;
+  padding: 0;
+  margin: 0;
+  background: #1c273e;
+}
+.l-header__inner{
+  height: inherit;
+  display: flex;
+  justify-content: space-between;
+}
+.l-header__logo{
+  font-family:fantasy;
+  color: #efeeea;
+}
+.l-header__list{
+  display: flex;
+  list-style: none;
+  height: inherit;
+  margin: 0;
+}
+.l-header__item{
+  display: flex;
+  align-items: center;
+}
+.l-header__link{
+  padding-left: 30px;
+  font-size: 20px;
+  color: #efeeea;
+  text-decoration: none;
+}
